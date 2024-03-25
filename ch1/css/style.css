@@ -1,0 +1,57 @@
+:root{
+  --gap: 1rem;
+}
+
+div > div {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.a {
+  background-color: #FCB10F;
+  flex-basis: calc(70% - var(--gap));
+}
+
+.b {
+  background-color: #801340;
+  flex-basis: calc(30% - var(--gap));
+}
+
+.c {
+  background-color: #4D2975;
+  flex-basis: 100%;
+}
+
+.d, .e, .f {
+  flex-basis: calc(33.333% - var(--gap));
+}
+
+.d {
+  background-color: #244479;
+}
+
+.e {
+  background-color: #55B4AF;
+}
+
+.f {
+  background-color: rgba(128, 19, 64, 0.7); 
+}
+
+.g {
+  background-color: rgba(77, 41, 117, 0.5);
+  flex-basis: calc(33.333% - var(--gap));
+}
+
+.h {
+  background-color: rgba(252, 177, 15, 0.7);
+  flex-basis: calc(66.666% - var(--gap));
+}
+
