@@ -1,7 +1,3 @@
-:root{
-  --gap: 1rem;
-}
-
 div > div {
   font-size: 5rem;
   text-align: center;
@@ -11,26 +7,31 @@ div > div {
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--gap);
+  justify-content: space-between;
+  > * {
+    margin-bottom: 1rem;
+  }
+}
+
+.a, .h {
+  flex-basis: 66%;
+}
+
+.b, .d, .e, .f, .g {
+  flex-basis: 32%;
 }
 
 .a {
   background-color: #FCB10F;
-  flex-basis: calc(70% - var(--gap));
 }
 
 .b {
   background-color: #801340;
-  flex-basis: calc(30% - var(--gap));
 }
 
 .c {
   background-color: #4D2975;
   flex-basis: 100%;
-}
-
-.d, .e, .f {
-  flex-basis: calc(33.333% - var(--gap));
 }
 
 .d {
@@ -47,11 +48,9 @@ div > div {
 
 .g {
   background-color: rgba(77, 41, 117, 0.5);
-  flex-basis: calc(33.333% - var(--gap));
 }
 
 .h {
   background-color: rgba(252, 177, 15, 0.7);
-  flex-basis: calc(66.666% - var(--gap));
 }
 
